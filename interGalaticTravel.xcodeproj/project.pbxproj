@@ -12,6 +12,7 @@
 		AA1DF4291D11ADC200F2AB8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1DF4271D11ADC200F2AB8D /* Main.storyboard */; };
 		AA1DF42B1D11ADC200F2AB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1DF42A1D11ADC200F2AB8D /* Assets.xcassets */; };
 		AA1DF42E1D11ADC200F2AB8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1DF42C1D11ADC200F2AB8D /* LaunchScreen.storyboard */; };
+		AA1DF4361D11BB0700F2AB8D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1DF4351D11BB0700F2AB8D /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AA1DF42A1D11ADC200F2AB8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA1DF42D1D11ADC200F2AB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA1DF42F1D11ADC200F2AB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA1DF4351D11BB0700F2AB8D /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				AA1DF4231D11ADC200F2AB8D /* AppDelegate.swift */,
 				AA1DF4251D11ADC200F2AB8D /* ViewController.swift */,
 				AA1DF4271D11ADC200F2AB8D /* Main.storyboard */,
+				AA1DF4351D11BB0700F2AB8D /* ImageViewController.swift */,
 				AA1DF42A1D11ADC200F2AB8D /* Assets.xcassets */,
 				AA1DF42C1D11ADC200F2AB8D /* LaunchScreen.storyboard */,
 				AA1DF42F1D11ADC200F2AB8D /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA1DF4261D11ADC200F2AB8D /* ViewController.swift in Sources */,
+				AA1DF4361D11BB0700F2AB8D /* ImageViewController.swift in Sources */,
 				AA1DF4241D11ADC200F2AB8D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

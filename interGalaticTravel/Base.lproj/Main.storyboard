@@ -26,6 +26,9 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="UdX-hm-Rur"/>
                                 </constraints>
                                 <state key="normal" title="Blue Star"/>
+                                <connections>
+                                    <segue destination="jZB-wq-a4U" kind="show" identifier="blueStarSegue" id="27B-aJ-Fkt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sZ-iB-4vF">
                                 <rect key="frame" x="264" y="285" width="72" height="30"/>
@@ -34,6 +37,9 @@
                                     <constraint firstAttribute="height" constant="30" id="bAo-o3-uwN"/>
                                 </constraints>
                                 <state key="normal" title="Red Dwarf"/>
+                                <connections>
+                                    <segue destination="jZB-wq-a4U" kind="show" identifier="redDwarfSeg" id="21C-KE-LTv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -48,7 +54,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1157" y="347"/>
+            <point key="canvasLocation" x="1151" y="349"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="5Gh-hU-m8V">
+            <objects>
+                <viewController id="jZB-wq-a4U" customClass="ImageViewController" customModule="interGalaticTravel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qpq-Ag-Opb"/>
+                        <viewControllerLayoutGuide type="bottom" id="esI-fb-abe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Vq-ni-HVH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTL-5Z-kZf">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Fgu-vs-2Wx"/>
+                                    <constraint firstAttribute="width" constant="300" id="MQ3-6L-zKN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KTL-5Z-kZf" firstAttribute="centerY" secondItem="4Vq-ni-HVH" secondAttribute="centerY" id="pYx-I4-5kW"/>
+                            <constraint firstItem="KTL-5Z-kZf" firstAttribute="centerX" secondItem="4Vq-ni-HVH" secondAttribute="centerX" id="rCu-Jg-o1J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagePic" destination="KTL-5Z-kZf" id="JRa-NL-DD2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00h-tX-xI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1851" y="348"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F8q-KC-ONJ">
@@ -69,4 +109,7 @@
             <point key="canvasLocation" x="345" y="1007"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="27B-aJ-Fkt"/>
+    </inferredMetricsTieBreakers>
 </document>

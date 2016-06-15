@@ -19,7 +19,20 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let imageVC = segue.destinationViewController as! ImageViewController
+        if segue.identifier == "redDwarfSeg"
+        {
+            imageVC.isBlueStar = false
+        }
+        else if segue.identifier == "blueStarSegue"
+        {
+            imageVC.isBlueStar = true
+        }
+        imageVC.title = sender?.currentTitle
+        
+    }
 
 }
 
